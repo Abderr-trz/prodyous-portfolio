@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+.vercel/
+*.log
+*.code-workspace
+.env*
+!.env.example
+tsconfig.tsbuildinfo
+
+# Original production masters stay local and are never committed.
+/cinematic/
+/Immobilier/
+/soc media/
+
+# Delivery videos live in Vercel Blob; poster frames remain in Git.
+public/videos/**/*.mp4
