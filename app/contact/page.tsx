@@ -18,10 +18,10 @@ export default function ContactPage() {
       <div className="contact-layout">
         <div className="contact-details">
           <p>Share the shape of your project, timing, and where it needs to live. We usually reply within two working days.</p>
-          <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
+          <a href={`tel:${siteConfig.phoneHref}`}>{siteConfig.phone}</a>
           <p>{siteConfig.location}</p>
         </div>
-        <ContactForm recipient={siteConfig.email} />
+        <ContactForm whatsappNumber={siteConfig.whatsappNumber} />
       </div>
     </section>
   );

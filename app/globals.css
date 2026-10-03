@@ -179,7 +179,7 @@ button { cursor: pointer; }
 
 .site-footer { padding: clamp(5rem, 9vw, 9rem) var(--page-pad) 2rem; background: var(--paper); color: var(--ink); }
 .footer-invitation { margin: 0 0 1rem; font-size: 0.76rem; }
-.footer-email { display: inline-block; font-family: var(--serif); font-size: clamp(2.7rem, 8.5vw, 9rem); line-height: 1; letter-spacing: -0.055em; overflow-wrap: anywhere; }
+.footer-contact { display: inline-block; font-family: var(--serif); font-size: clamp(2.7rem, 8.5vw, 9rem); line-height: 1; letter-spacing: -0.055em; overflow-wrap: anywhere; }
 .footer-base { display: grid; grid-template-columns: 1fr 1fr auto; gap: 2rem; margin-top: clamp(5rem, 10vw, 10rem); padding-top: 1rem; border-top: 1px solid rgba(8,9,9,0.35); font-size: 0.7rem; }
 .footer-base p { margin: 0; }
 
@@ -303,7 +303,7 @@ button { cursor: pointer; }
   .manifesto > p { font-size: 3rem; }
   .footer-base { grid-template-columns: 1fr auto; }
   .footer-base p:nth-child(2) { display: none; }
-  .footer-email { font-size: 10vw; }
+  .footer-contact { font-size: 10vw; }
   .page-lead, .about-lead, .contact-lead { padding-left: var(--page-pad); }
   .page-lead h1 { font-size: clamp(4rem, 18vw, 6.5rem); }
   .about-image { width: calc(100% - var(--page-pad)); height: 130vw; }

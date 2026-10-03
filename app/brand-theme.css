@@ -67,8 +67,8 @@ body { background: var(--ink); }
 }
 
 .footer-invitation { color: var(--warm); }
-.footer-email { transition: color 300ms ease; }
-.footer-email:hover { color: var(--warm); }
+.footer-contact { transition: color 300ms ease; }
+.footer-contact:hover { color: var(--warm); }
 .footer-base { border-top-color: rgba(249, 186, 23, 0.25); }
 .footer-base a { color: var(--warm); }
 
@@ -110,6 +110,6 @@ body { background: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
   .category-card,
-  .footer-email,
+  .footer-contact,
   .film-meta h2 { transition: none; }
 }
