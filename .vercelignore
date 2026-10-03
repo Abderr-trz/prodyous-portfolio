@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.git/
+out/
+*.log
+*.code-workspace
+.env*
+!.env.example
+tsconfig.tsbuildinfo
+
+/cinematic/
+/Immobilier/
+/soc media/
+public/videos/**/*.mp4
