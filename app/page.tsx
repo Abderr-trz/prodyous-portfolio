@@ -16,9 +16,8 @@ export default function HomePage() {
           <h1 id="home-title">Hi, we are PRODYOUS!</h1>
           <p>
             We are an audiovisual production studio based in Morocco, Agadir. We create
-            purposeful photography and films across culture, business, fashion,
-            and documentary—bringing stories to life through images that hold
-            attention and stay in memory.
+            content for brands from Photography · Videography · Production · Content ·
+            Events · Products · Restaurants · Real Estate · Drone · Design · Editing- , to Advertising and Branding
           </p>
         </div>
         <a className="hero-index" href="#work" aria-label="Scroll to portfolio categories">
