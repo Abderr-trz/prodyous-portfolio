@@ -1,0 +1,13 @@
+.category-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-meta h3,
+.category-meta p {
+  width: 100%;
+  text-align: center;
+}
