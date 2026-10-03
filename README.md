@@ -36,6 +36,6 @@ NEXT_PUBLIC_VIDEO_BASE_URL=https://7a83mn90ichgitng.public.blob.vercel-storage.c
 
 Vercel automatically provides the private Blob write credentials. Never commit `.env.local` or any token.
 
-## Contact delivery
+## WhatsApp contact
 
-The current form opens the visitor’s email application and never claims a server submission succeeded. Its transport contract lives in `lib/contact.ts`, ready for a future Resend, Formspree, or server-action adapter.
+The persistent WhatsApp button opens a direct chat with PRODYOUS using the number configured in `lib/site.ts`.

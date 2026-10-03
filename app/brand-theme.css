@@ -60,18 +60,6 @@ body { background: var(--ink); }
 .text-link:hover,
 .text-button:hover { color: var(--warm); }
 
-.site-footer {
-  background: #080808;
-  color: var(--paper);
-  border-top: 1px solid rgba(249, 186, 23, 0.42);
-}
-
-.footer-invitation { color: var(--warm); }
-.footer-contact { transition: color 300ms ease; }
-.footer-contact:hover { color: var(--warm); }
-.footer-base { border-top-color: rgba(249, 186, 23, 0.25); }
-.footer-base a { color: var(--warm); }
-
 .collection-header > a,
 .collection-count { color: var(--warm); }
 
@@ -91,17 +79,9 @@ body { background: var(--ink); }
 .film-card:has(.film-frame button:hover) .film-meta h2 { color: var(--warm); }
 .film-meta p { color: var(--warm); }
 
-.page-lead > p,
-.contact-form label span { color: var(--warm); }
+.page-lead > p { color: var(--warm); }
 .services ul { border-top-color: var(--line); }
 .services li { border-bottom-color: var(--line); }
-.contact-form input,
-.contact-form select,
-.contact-form textarea { border-bottom-color: rgba(249, 186, 23, 0.25); }
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus { border-color: var(--warm); }
-
 @media (max-width: 767px) {
   .mobile-nav[open] { background: var(--ink); color: var(--paper); }
   .mobile-nav[open] nav a:first-child { color: var(--warm); }
@@ -110,6 +90,5 @@ body { background: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) {
   .category-card,
-  .footer-contact,
   .film-meta h2 { transition: none; }
 }

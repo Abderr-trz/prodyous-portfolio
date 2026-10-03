@@ -3,7 +3,7 @@ import { getAllCategories } from "@/lib/categories";
 import { siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/about", "/contact"].map((route) => ({
+  const routes = ["", "/about"].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,

@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
-import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 import "./home-refresh.css";
@@ -9,6 +9,7 @@ import "./category.css";
 import "./home-categories.css";
 import "./brand-theme.css";
 import "./social-category.css";
+import "./whatsapp.css";
 
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-serif", display: "swap" });
@@ -38,7 +39,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#main">Skip to content</a>
         <Header />
         <main id="main">{children}</main>
-        <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

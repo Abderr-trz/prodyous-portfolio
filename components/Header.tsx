@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const desktopLinks = [
   { href: "/#work", label: "Portfolio" },
-  { href: "/contact", label: "Contact" },
 ] as const;
 
 const mobileLinks = [
