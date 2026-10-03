@@ -1,0 +1,211 @@
+@media (max-width: 767px) {
+  :root {
+    --page-pad: clamp(1rem, 4.8vw, 1.4rem);
+    --header-height: 5.25rem;
+    --section-space: clamp(4.5rem, 18vw, 6.5rem);
+  }
+
+  html { scroll-padding-top: var(--header-height); }
+
+  body { padding-bottom: 4.75rem; }
+
+  .site-header {
+    position: fixed;
+    height: var(--header-height);
+    padding-right: max(var(--page-pad), env(safe-area-inset-right));
+    padding-left: max(var(--page-pad), env(safe-area-inset-left));
+    background: rgba(5, 5, 5, 0.92);
+    border-bottom-color: rgba(249, 186, 23, 0.18);
+    backdrop-filter: blur(14px);
+  }
+
+  .brand img {
+    width: 3.55rem;
+    height: 3.55rem;
+  }
+
+  .mobile-nav summary {
+    display: grid;
+    place-items: center;
+    min-width: 3rem;
+    min-height: 3rem;
+    margin-right: -0.7rem;
+    touch-action: manipulation;
+  }
+
+  .mobile-nav[open] {
+    padding-top: max(1.5rem, env(safe-area-inset-top));
+    padding-right: max(var(--page-pad), env(safe-area-inset-right));
+    padding-left: max(var(--page-pad), env(safe-area-inset-left));
+  }
+
+  .mobile-nav nav {
+    gap: 0.8rem;
+    margin-top: 16vh;
+  }
+
+  .mobile-nav nav a {
+    width: fit-content;
+    padding: 0.12em 0;
+    font-size: clamp(3.8rem, 18vw, 6rem);
+    touch-action: manipulation;
+  }
+
+  .home-hero {
+    min-height: 100dvh;
+    padding: calc(var(--header-height) + 3.5rem) var(--page-pad) 6.25rem;
+  }
+
+  .hero-copy { width: 100%; }
+
+  .hero-copy h1 {
+    max-width: 10ch;
+    margin-inline: auto;
+    font-size: clamp(2.6rem, 12.5vw, 4.15rem);
+    line-height: 0.94;
+    text-wrap: balance;
+  }
+
+  .hero-copy p {
+    max-width: 35ch;
+    margin: 1.35rem auto 0;
+    font-size: clamp(1.12rem, 5vw, 1.45rem);
+    line-height: 1.28;
+    text-wrap: pretty;
+  }
+
+  .hero-copy::before {
+    width: 2rem;
+    margin-bottom: 1.15rem;
+  }
+
+  .hero-index { bottom: max(1.25rem, env(safe-area-inset-bottom)); }
+
+  .work-section {
+    padding: 4.25rem var(--page-pad) var(--section-space);
+  }
+
+  .section-intro {
+    margin-bottom: 2rem;
+  }
+
+  .section-intro h2 { font-size: 0.82rem; }
+
+  .category-grid { gap: 3.75rem; }
+
+  .category-card a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .category-cover { aspect-ratio: 4 / 5; }
+
+  .category-meta {
+    min-height: 0;
+    padding: 1.2rem 0 0;
+  }
+
+  .category-meta h3 {
+    font-size: clamp(1.65rem, 8vw, 2.25rem);
+    line-height: 1;
+  }
+
+  .category-meta p { font-size: 0.68rem; }
+
+  .category-card a:active .category-cover img {
+    transform: scale(1.025);
+    filter: brightness(0.82);
+  }
+
+  .manifesto {
+    gap: 2rem;
+    padding: var(--section-space) var(--page-pad) 3rem;
+  }
+
+  .manifesto > p {
+    font-size: clamp(2.35rem, 11vw, 3.15rem);
+    line-height: 0.96;
+  }
+
+  .collection-page {
+    padding: var(--header-height) var(--page-pad) var(--section-space);
+  }
+
+  .collection-header {
+    padding: 3.75rem 0 3.25rem;
+  }
+
+  .collection-header h1 {
+    max-width: 100%;
+    margin-top: 3rem;
+    font-size: clamp(4.25rem, 20vw, 6.2rem);
+    line-height: 0.78;
+    overflow-wrap: anywhere;
+  }
+
+  .collection-header > div p {
+    max-width: 36ch;
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .film-grid { gap: 4.5rem; }
+
+  .film-frame {
+    max-height: calc(100dvh - 8rem);
+    border: 1px solid rgba(249, 186, 23, 0.14);
+  }
+
+  .film-frame button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .film-play {
+    width: 3.6rem;
+    height: 3.6rem;
+    background: rgba(5, 5, 5, 0.56);
+  }
+
+  .film-meta { padding-top: 0.8rem; }
+
+  .film-meta h2 {
+    max-width: 80%;
+    font-size: clamp(1.7rem, 8vw, 2.25rem);
+  }
+
+  .about-lead { padding-top: 5.5rem; }
+
+  .about-copy,
+  .services { padding-right: var(--page-pad); padding-left: var(--page-pad); }
+
+  .whatsapp-button {
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    min-height: 3.35rem;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.46);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  .whatsapp-button:active {
+    transform: translateY(1px) scale(0.98);
+    background: var(--warm);
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-copy h1 { font-size: 2.55rem; }
+  .hero-copy p { font-size: 1.08rem; }
+  .whatsapp-button { padding-inline: 1rem; }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .home-hero {
+    min-height: 34rem;
+    padding-top: 8rem;
+  }
+
+  .hero-copy h1 { font-size: clamp(2.6rem, 9vw, 4rem); }
+  .hero-copy p { font-size: 1.15rem; }
+}

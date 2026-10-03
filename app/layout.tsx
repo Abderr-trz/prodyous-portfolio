@@ -10,6 +10,7 @@ import "./home-categories.css";
 import "./brand-theme.css";
 import "./social-category.css";
 import "./whatsapp.css";
+import "./mobile.css";
 
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-serif", display: "swap" });
