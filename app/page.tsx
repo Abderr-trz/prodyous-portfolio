@@ -2,8 +2,12 @@ import Link from "next/link";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { getAllCategories } from "@/lib/categories";
 
+const homepageOrder = ["social-media", "cinematic", "immobilier"];
+
 export default function HomePage() {
-  const categories = getAllCategories();
+  const categories = getAllCategories()
+    .slice()
+    .sort((first, second) => homepageOrder.indexOf(first.slug) - homepageOrder.indexOf(second.slug));
 
   return (
     <>
