@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="hero-copy">
           <h1 id="home-title">Hi, we are PRODYOUS!</h1>
           <p>
-            We are an audiovisual production studio based in Morocco , Agadir . We create
+            We are an audiovisual production studio based in Morocco, Agadir. We create
             purposeful photography and films across culture, business, fashion,
             and documentary—bringing stories to life through images that hold
             attention and stay in memory.
@@ -26,7 +26,6 @@ export default function HomePage() {
       <section className="work-section category-section" id="work" aria-labelledby="work-title">
         <div className="section-intro">
           <h2 id="work-title">Portfolio</h2>
-          <p>Explore the work by field. Each collection brings together films with a shared visual language.</p>
         </div>
         <CategoryGrid categories={categories} />
       </section>
