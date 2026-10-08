@@ -33,6 +33,9 @@ export const categories = [
       { title: "Ismall Collection I", src: "/videos/cinematic/film-07.mp4", poster: "/videos/cinematic/posters/film-07.jpg", duration: "0:18", width: 720, height: 1280 },
       { title: "Ismall Collection II", src: "/videos/cinematic/film-08.mp4", poster: "/videos/cinematic/posters/film-08.jpg", duration: "1:51", width: 720, height: 1280 },
       { title: "Cinematic Study", src: "/videos/cinematic/film-09.mp4", poster: "/videos/cinematic/posters/film-09.jpg", duration: "0:52", width: 720, height: 1280 },
+      { title: "Auto Hall", src: "/videos/cinematic/film-10.mp4", poster: "/videos/cinematic/posters/film-10.jpg", duration: "1:36", width: 720, height: 1280 },
+      { title: "ENSA — Day 1", src: "/videos/cinematic/film-11.mp4", poster: "/videos/cinematic/posters/film-11.jpg", duration: "4:03", width: 1280, height: 720 },
+      { title: "ENSA — Day 3", src: "/videos/cinematic/film-12.mp4", poster: "/videos/cinematic/posters/film-12.jpg", duration: "3:50", width: 1280, height: 720 },
     ],
   },
   {
