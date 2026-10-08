@@ -72,6 +72,20 @@ export const categories = [
       { title: "Vente II", src: "/videos/social-media/film-11.mp4", poster: "/videos/social-media/posters/film-11.jpg", duration: "0:14", width: 720, height: 1280 },
     ],
   },
+  {
+    slug: "soutenance",
+    title: "Soutenance",
+    description: "Presentation-day films capturing the preparation, key exchanges, and proud moments around an academic defense.",
+    cover: "/videos/soutenance/posters/film-05.jpg",
+    coverAlt: "Graduate holding a mortarboard during a PRODYOUS soutenance film",
+    films: [
+      { title: "Dr. Rajaa", src: "/videos/soutenance/film-01.mp4", poster: "/videos/soutenance/posters/film-01.jpg", duration: "2:47", width: 1280, height: 720 },
+      { title: "Dr. Ft Mahir", src: "/videos/soutenance/film-02.mp4", poster: "/videos/soutenance/posters/film-02.jpg", duration: "3:35", width: 1280, height: 720 },
+      { title: "Meryem", src: "/videos/soutenance/film-03.mp4", poster: "/videos/soutenance/posters/film-03.jpg", duration: "4:36", width: 1280, height: 720 },
+      { title: "Nouhaila", src: "/videos/soutenance/film-04.mp4", poster: "/videos/soutenance/posters/film-04.jpg", duration: "3:46", width: 1280, height: 720 },
+      { title: "Soutenance Reel", src: "/videos/soutenance/film-05.mp4", poster: "/videos/soutenance/posters/film-05.jpg", duration: "0:37", width: 720, height: 1280 },
+    ],
+  },
 ] as const satisfies readonly WorkCategory[];
 
 const categorySlugs = new Set(categories.map((category) => category.slug));

@@ -11,4 +11,5 @@ tsconfig.tsbuildinfo
 /cinematic/
 /Immobilier/
 /soc media/
+/SOUTENANCE/
 public/videos/**/*.mp4

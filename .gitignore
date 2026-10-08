@@ -12,6 +12,7 @@ tsconfig.tsbuildinfo
 /cinematic/
 /Immobilier/
 /soc media/
+/SOUTENANCE/
 
 # Delivery videos live in Vercel Blob; poster frames remain in Git.
 public/videos/**/*.mp4

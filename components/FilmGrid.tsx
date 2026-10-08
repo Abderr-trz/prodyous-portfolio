@@ -12,6 +12,7 @@ type FullscreenVideo = HTMLVideoElement & {
 export function FilmGrid({ films }: { films: readonly Film[] }) {
   const [activeFilm, setActiveFilm] = useState<number | null>(null);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
+  const hasLandscapeFilms = films.some((film) => film.width > film.height);
 
   function playFullscreen(index: number) {
     const video = videoRefs.current[index] as FullscreenVideo | null;
@@ -34,12 +35,14 @@ export function FilmGrid({ films }: { films: readonly Film[] }) {
   }
 
   return (
-    <div className="film-grid">
+    <div className={`film-grid${hasLandscapeFilms ? " film-grid-mixed" : ""}`}>
       {films.map((film, index) => {
         const isActive = activeFilm === index;
+        const orientation = film.width > film.height ? "landscape" : "portrait";
+
         return (
-          <article className="film-card" key={film.src}>
-            <div className="film-frame">
+          <article className={`film-card film-card-${orientation}`} key={film.src}>
+            <div className={`film-frame film-frame-${orientation}`}>
               <video
                 ref={(element) => { videoRefs.current[index] = element; }}
                 src={getVideoUrl(film.src)}

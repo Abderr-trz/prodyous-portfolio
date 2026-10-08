@@ -2,7 +2,7 @@ import Link from "next/link";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { getAllCategories } from "@/lib/categories";
 
-const homepageOrder = ["social-media", "cinematic", "immobilier"];
+const homepageOrder = ["social-media", "cinematic", "immobilier", "soutenance"];
 
 export default function HomePage() {
   const categories = getAllCategories()
@@ -17,7 +17,7 @@ export default function HomePage() {
           <p>
             We are an audiovisual production studio based in Morocco, Agadir. We create
             content for brands from Photography · Videography · Production · Content ·
-            Events · Products · Restaurants · Real Estate · Drone · Design · Editing- , to Advertising and Branding
+            Events · Products · Restaurants · Real Estate · Drone · Design · Editing , to Advertising and Branding
           </p>
         </div>
         <a className="hero-index" href="#work" aria-label="Scroll to portfolio categories">
