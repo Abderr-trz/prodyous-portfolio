@@ -70,6 +70,10 @@ export const categories = [
       { title: "Parfum Decant", src: "/videos/social-media/film-09.mp4", poster: "/videos/social-media/posters/film-09.jpg", duration: "0:40", width: 720, height: 1280 },
       { title: "Vente I", src: "/videos/social-media/film-10.mp4", poster: "/videos/social-media/posters/film-10.jpg", duration: "0:22", width: 720, height: 1280 },
       { title: "Vente II", src: "/videos/social-media/film-11.mp4", poster: "/videos/social-media/posters/film-11.jpg", duration: "0:14", width: 720, height: 1280 },
+      { title: "Social Talk I", src: "/videos/social-media/film-12.mp4", poster: "/videos/social-media/posters/film-12.jpg", duration: "1:56", width: 720, height: 1280 },
+      { title: "Social Talk II", src: "/videos/social-media/film-13.mp4", poster: "/videos/social-media/posters/film-13.jpg", duration: "1:47", width: 720, height: 1280 },
+      { title: "Social Talk III", src: "/videos/social-media/film-14.mp4", poster: "/videos/social-media/posters/film-14.jpg", duration: "1:58", width: 720, height: 1280 },
+      { title: "Social Talk IV", src: "/videos/social-media/film-15.mp4", poster: "/videos/social-media/posters/film-15.jpg", duration: "1:31", width: 720, height: 1280 },
     ],
   },
   {
